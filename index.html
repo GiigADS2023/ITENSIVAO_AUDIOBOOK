@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Usado para vincular uma folha de estilo externa a um documento HTML.-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--RECURSOS DA BIBLIOTECA-ICONE-->
+</head>
+<body>
+    <div class="container-aplicativo">
+        <img src="./images/dom-casmurro.jpeg" alt="">
+        <div id="informacoes-faixa">  
+            <p id="capitulo">Capítulo 1</p>
+            <p id="nome-autor">Machado de Assis</p>
+        </div>
+
+        <!--Opera a faixa de audio no sistema-->
+        <audio id='audio-capitulo' src="./books/dom-casmurro/1.mp3"></audio>
+
+        <!--Deixa todos em uma só junção-->
+        <!--<div> - abraça todos para estarem na mesma linha-->
+        <!--<div id=""> - ativa quando for usado "container-botoes"-->
+        <div id="container-botoes">
+            <button id="anterior" class="bi bi-skip-backward-fill"></button>
+            <button id='play-pause' class="bi bi-play-circle-fill"></button>
+            <button id='proximo' class="bi bi-skip-forward-fill"></button>
+        </div>
+    </div>
+
+    <!--Passa a conhecer o que há no javascript-->
+    <!--É botado aqui para ele fazer toda a leitura e por último o javascript-->
+    <!--Ou seja, carrega todo o html e depois o funcional dele(JavaScript)-->
+    <script src="./script.js"></script>
+</body>
+</html>
